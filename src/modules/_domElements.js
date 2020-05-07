@@ -16,14 +16,15 @@ const startBtn = document.createElement('button');
 startBtn.classList.add('btn', 'btn-start');
 
 const form = document.createElement('form');
-const input = document.createElement('input');
+const inputText = document.createElement('input');
 const formBtn = document.createElement('button');
 form.classList.add('form');
-input.type = 'text';
-input.classList.add('input');
-input.placeholder = 'Location';
+inputText.type = 'text';
+inputText.classList.add('inputText');
+inputText.placeholder = 'Location';
 formBtn.classList.add('btn', 'btn-form');
 formBtn.textContent = 'Search';
+formBtn.type = 'button';
 
 const elements = {
   container,
@@ -33,7 +34,7 @@ const elements = {
   header,
   startBtn,
   form,
-  input,
+  inputText,
   formBtn,
 };
 export default elements;

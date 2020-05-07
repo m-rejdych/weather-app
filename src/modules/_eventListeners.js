@@ -1,5 +1,6 @@
 import elements from './_domElements';
 import createForm from './_form';
+import fetchData from './_fetchData';
 
 function addStartBtnListener() {
   const { startBtn } = elements;
@@ -13,7 +14,9 @@ function addStartBtnListener() {
 function addFormBtnListener() {
   const { formBtn } = elements;
 
-  formBtn.addEventListener('click', () => {});
+  formBtn.addEventListener('click', () => {
+    fetchData();
+  });
 }
 
-export { addStartBtnListener };
+export { addStartBtnListener, addFormBtnListener };

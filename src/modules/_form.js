@@ -1,10 +1,11 @@
 import elements from './_domElements';
+import createFormBtn from './_formBtn';
 
 function createForm() {
-  const { content, form, input, formBtn } = elements;
+  const { content, form, inputText } = elements;
 
-  form.appendChild(input);
-  form.appendChild(formBtn);
+  form.appendChild(inputText);
+  createFormBtn();
 
   content.appendChild(form);
 }
