@@ -1,0 +1,37 @@
+{
+  "name": "Weather-App",
+  "version": "1.0.0",
+  "description": "This is a simple weather app, taking location and displaying current weather in this location. What I am going to use here is plain HTML, JavaScript and CSS with Sass. This project is made for The Odin Project's course purpoes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-rejdych/Weather-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-rejdych/Weather-App/issues"
+  },
+  "homepage": "https://github.com/m-rejdych/Weather-App#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
