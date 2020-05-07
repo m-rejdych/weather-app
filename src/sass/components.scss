@@ -1,7 +1,11 @@
 .btn {
   width: 30rem;
   height: 7rem;
-  top: -5rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: inherit;
+  color: $color-text-dark;
+  font-weight: 500;
   border-radius: 100px;
   border: none;
   background-color: rgba($color-mango, 0.4);
@@ -24,7 +28,6 @@
   &:active {
     transform: translateY(-0.2rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    opacity: 0;
   }
 
   &:focus {
@@ -45,14 +48,52 @@
   }
 
   &-start {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-family: inherit;
-    color: $color-text-dark;
-    font-weight: 500;
+    top: -5rem;
     animation-name: btn-start-animation;
     animation-duration: 2s;
     animation-delay: 2.5s;
     animation-fill-mode: backwards;
+  }
+}
+
+.form {
+  position: absolute;
+  height: 40%;
+  top: 45%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  animation-name: form-start-animation;
+  animation-duration: 1.5s;
+
+  .input {
+    display: block;
+    margin-bottom: 3rem;
+    height: 10rem;
+    width: 50rem;
+    border: none;
+    background-color: rgba($color-mango, 0.2);
+    border-radius: 20px;
+    font-size: 5rem;
+    padding-left: 2rem;
+    transition: all 0.2s;
+    color: $color-text-dark;
+
+    &::placeholder {
+      color: rgba($color-text-dark, 0.4);
+      transition: all 0.2s;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: rgba($color-mango, 0.5);
+
+      &::placeholder {
+        color: rgba($color-text-dark, 0.6);
+      }
+    }
   }
 }

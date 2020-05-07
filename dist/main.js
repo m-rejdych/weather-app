@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/sass/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap);\"]);\n// Module\nexports.push([module.i, \"*,\\n*::before,\\n*::after {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: inherit; }\\n\\nhtml {\\n  font-size: 62.5%;\\n  box-sizing: border-box; }\\n\\nbody {\\n  min-height: 100vh;\\n  min-width: 100vw; }\\n\\n@-webkit-keyframes background-animation {\\n  0% {\\n    transform: scale(1); }\\n  50% {\\n    transform: scale(5); }\\n  100% {\\n    transform: scale(1); } }\\n\\n@keyframes background-animation {\\n  0% {\\n    transform: scale(1); }\\n  50% {\\n    transform: scale(5); }\\n  100% {\\n    transform: scale(1); } }\\n\\n@-webkit-keyframes load-header {\\n  0% {\\n    opacity: 0;\\n    transform: translateY(2rem); }\\n  50% {\\n    opacity: 1;\\n    transform: translateY(0); }\\n  75% {\\n    opacity: 1;\\n    transform: translateY(0); }\\n  100% {\\n    opacity: 1;\\n    transform: translateY(-20rem); } }\\n\\n@keyframes load-header {\\n  0% {\\n    opacity: 0;\\n    transform: translateY(2rem); }\\n  50% {\\n    opacity: 1;\\n    transform: translateY(0); }\\n  75% {\\n    opacity: 1;\\n    transform: translateY(0); }\\n  100% {\\n    opacity: 1;\\n    transform: translateY(-20rem); } }\\n\\n@-webkit-keyframes btn-start-animation {\\n  0% {\\n    opacity: 0;\\n    transform: translateY(10rem); }\\n  100% {\\n    opacity: 1;\\n    transform: translateY(0); } }\\n\\n@keyframes btn-start-animation {\\n  0% {\\n    opacity: 0;\\n    transform: translateY(10rem); }\\n  100% {\\n    opacity: 1;\\n    transform: translateY(0); } }\\n\\n.container {\\n  position: absolute;\\n  width: 100%;\\n  height: 100%;\\n  overflow: hidden; }\\n  .container .background {\\n    background-color: #ffe53b;\\n    background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%), linear-gradient(327deg, #ff2525 0%, #ffe53b 74%);\\n    height: 100%;\\n    width: 100%;\\n    -webkit-animation-name: background-animation;\\n            animation-name: background-animation;\\n    -webkit-animation-duration: 5s;\\n            animation-duration: 5s;\\n    -webkit-animation-iteration-count: infinite;\\n            animation-iteration-count: infinite; }\\n  .container .content {\\n    width: 100%;\\n    height: 100%;\\n    position: absolute;\\n    top: 0;\\n    left: 0;\\n    display: flex;\\n    flex-direction: column;\\n    justify-content: center;\\n    align-items: center; }\\n\\n.btn {\\n  width: 30rem;\\n  height: 7rem;\\n  top: -5rem;\\n  border-radius: 100px;\\n  border: none;\\n  background-color: rgba(255, 190, 11, 0.4);\\n  cursor: pointer;\\n  transition: all 0.2s;\\n  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);\\n  z-index: 2;\\n  position: relative; }\\n  .btn:hover {\\n    transform: scale(1.1) translateY(-0.5rem);\\n    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }\\n    .btn:hover::before {\\n      transform: scaleX(1.4) scaleY(1.3);\\n      opacity: 0; }\\n  .btn:active {\\n    transform: translateY(-0.2rem);\\n    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }\\n  .btn:focus {\\n    outline: none; }\\n  .btn::before {\\n    content: '';\\n    position: absolute;\\n    top: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 100%;\\n    border-radius: 100px;\\n    background-color: rgba(255, 190, 11, 0.4);\\n    transition: all 0.3s;\\n    z-index: 1; }\\n  .btn-start {\\n    text-transform: uppercase;\\n    font-size: 2.5rem;\\n    font-family: inherit;\\n    color: #333;\\n    font-weight: 500;\\n    -webkit-animation-name: btn-start-animation;\\n            animation-name: btn-start-animation;\\n    -webkit-animation-duration: 2s;\\n            animation-duration: 2s;\\n    -webkit-animation-delay: 2.5s;\\n            animation-delay: 2.5s;\\n    -webkit-animation-fill-mode: backwards;\\n            animation-fill-mode: backwards; }\\n\\nbody {\\n  font-size: 1.6rem;\\n  font-family: 'Jost', sans-serif;\\n  font-weight: 400; }\\n\\n.content {\\n  -webkit-backface-visibility: hidden;\\n          backface-visibility: hidden; }\\n  .content__header {\\n    font-weight: 200;\\n    font-size: 10rem;\\n    color: #eee;\\n    -webkit-animation-name: load-header;\\n            animation-name: load-header;\\n    -webkit-animation-duration: 3.5s;\\n            animation-duration: 3.5s;\\n    -webkit-animation-fill-mode: forwards;\\n            animation-fill-mode: forwards; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/sass/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/resolve-url-loader!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -129,7 +129,67 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/style.scss */ \"./src/sass/style.scss\");\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/style.scss */ \"./src/sass/style.scss\");\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/_container */ \"./src/modules/_container.js\");\n/* harmony import */ var _modules_content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/_content */ \"./src/modules/_content.js\");\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/_header */ \"./src/modules/_header.js\");\n/* harmony import */ var _modules_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/_form */ \"./src/modules/_form.js\");\n\n\n\n\n\n// import createStartBtn from './modules/_startBtn';\n\n\nObject(_modules_container__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\nObject(_modules_content__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\nObject(_modules_header__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n// createStartBtn();\nObject(_modules_form__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/_container.js":
+/*!***********************************!*\
+  !*** ./src/modules/_container.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_domElements */ \"./src/modules/_domElements.js\");\n\n\nfunction createContainer() {\n  const { container, script, background } = _domElements__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  document.body.insertBefore(container, script);\n  container.appendChild(background);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (createContainer);\n\n\n//# sourceURL=webpack:///./src/modules/_container.js?");
+
+/***/ }),
+
+/***/ "./src/modules/_content.js":
+/*!*********************************!*\
+  !*** ./src/modules/_content.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_domElements */ \"./src/modules/_domElements.js\");\n\n\nfunction createContent() {\n  const { content, container } = _domElements__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n  container.appendChild(content);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (createContent);\n\n\n//# sourceURL=webpack:///./src/modules/_content.js?");
+
+/***/ }),
+
+/***/ "./src/modules/_domElements.js":
+/*!*************************************!*\
+  !*** ./src/modules/_domElements.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst container = document.createElement('div');\ncontainer.classList.add('container');\n\nconst script = document.querySelector('script');\n\nconst background = document.createElement('div');\nbackground.classList.add('background');\n\nconst content = document.createElement('div');\ncontent.classList.add('content');\n\nconst header = document.createElement('h1');\nheader.classList.add('content__header');\n\nconst startBtn = document.createElement('button');\nstartBtn.classList.add('btn', 'btn-start');\n\nconst form = document.createElement('form');\nconst input = document.createElement('input');\nconst formBtn = document.createElement('button');\nform.classList.add('form');\ninput.type = 'text';\ninput.classList.add('input');\nformBtn.classList('btn', 'btn-form');\n\nconst elements = {\n  container,\n  script,\n  background,\n  content,\n  header,\n  startBtn,\n  form,\n  input,\n  formBtn,\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (elements);\n\n\n//# sourceURL=webpack:///./src/modules/_domElements.js?");
+
+/***/ }),
+
+/***/ "./src/modules/_form.js":
+/*!******************************!*\
+  !*** ./src/modules/_form.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_domElements */ \"./src/modules/_domElements.js\");\n\n\nfunction createForm() {\n  const { content, form, input, formBtn } = _domElements__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n  form.appendChild(input);\n  form.appendChild(formBtn);\n\n  content.appendChild(form);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (createForm);\n\n\n//# sourceURL=webpack:///./src/modules/_form.js?");
+
+/***/ }),
+
+/***/ "./src/modules/_header.js":
+/*!********************************!*\
+  !*** ./src/modules/_header.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_domElements */ \"./src/modules/_domElements.js\");\n\n\nfunction createHeader() {\n  const { content, header } = _domElements__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  header.textContent = \"What's the weather?\";\n\n  content.appendChild(header);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (createHeader);\n\n\n//# sourceURL=webpack:///./src/modules/_header.js?");
 
 /***/ }),
 
