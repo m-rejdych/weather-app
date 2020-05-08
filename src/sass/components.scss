@@ -12,7 +12,6 @@
   cursor: pointer;
   transition: all 0.2s;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  z-index: 2;
   position: relative;
 
   &:hover {
@@ -44,7 +43,7 @@
     border-radius: 100px;
     background-color: rgba($color-mango, 0.4);
     transition: all 0.3s;
-    z-index: 1;
+    z-index: -1;
   }
 
   &-start {
