@@ -23,7 +23,19 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .result-page {
+    position: absolute;
+    top: 40vh;
+    animation-name: result-page-animation;
+    animation-duration: 1.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
 }

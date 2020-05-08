@@ -12,9 +12,18 @@ body {
   &__header {
     font-weight: 200;
     font-size: 10rem;
+    margin-top: 3rem;
     color: $color-text-light;
     animation-name: load-header;
     animation-duration: 3.5s;
     animation-fill-mode: forwards;
+  }
+
+  .result-page {
+    &__info {
+      font-size: 5rem;
+      margin-bottom: 5rem;
+      color: $color-text-dark;
+    }
   }
 }

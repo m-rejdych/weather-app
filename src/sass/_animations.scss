@@ -13,19 +13,19 @@
 @keyframes load-header {
   0% {
     opacity: 0;
-    transform: translateY(2rem);
+    transform: translateY(50vh);
   }
   50% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(35vh);
   }
   75% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(35vh);
   }
   100% {
     opacity: 1;
-    transform: translateY(-20rem);
+    transform: translateY(0);
   }
 }
 
@@ -41,6 +41,15 @@
 }
 
 @keyframes form-start-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes result-page-animation {
   0% {
     opacity: 0;
   }
